@@ -1,8 +1,8 @@
 
 import React, { useState, useRef, useEffect } from 'react';
 import { Bot, Send, User, Loader2, Sparkles, AlertCircle } from 'lucide-react';
-import { getDiagnosticResponse } from '../services/geminiService';
-import { ChatMessage } from '../types';
+import { getDiagnosticResponse } from '../services/geminiService.ts';
+import { ChatMessage } from '../types.ts';
 
 const AIDiagnostic: React.FC = () => {
   const [messages, setMessages] = useState<ChatMessage[]>([
